@@ -1,21 +1,45 @@
 @import '~antd/dist/reset.css';
 
-// scss
-.scrollView {
-  width: 240px;
-  height: 78px;
-  overflow-x: scroll;
+.listBox{
+  width: 30%;
+  margin: 100px auto;
 }
-.chooseImgItem {
-  margin-left: 8px;
-  height: 56px;
-  width: 56px;
-  border-radius: 4px;
+.listItem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+}
+.dotWrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.dotList{
+  width: 108px;
   overflow: hidden;
+  white-space: nowrap;
 }
-.chooseImgItem:first-child{
-  margin-left: 15px;
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  background-color: #767684;
+  margin-right: 12px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 12px;
+  transition: all .2s ease;
+  &:last-child {
+    margin-right: 0;
+  }
 }
-.chooseImgItem:last-child{
-  margin-right: 15px;
+.selectedDot {
+  background: #586ee0;
+}
+.smallDot {
+  transform: scale(0.6);
 }
