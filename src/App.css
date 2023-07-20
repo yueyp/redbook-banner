@@ -1,38 +1,21 @@
-.App {
-  text-align: center;
-}
+@import '~antd/dist/reset.css';
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+// scss
+.scrollView {
+  width: 240px;
+  height: 78px;
+  overflow-x: scroll;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.chooseImgItem {
+  margin-left: 8px;
+  height: 56px;
+  width: 56px;
+  border-radius: 4px;
+  overflow: hidden;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.chooseImgItem:first-child{
+  margin-left: 15px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chooseImgItem:last-child{
+  margin-right: 15px;
 }
